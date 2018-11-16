@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		button {
+			 padding: 3px 10px;
+			 font-size: 15px;
+			 text-align: center;
+			 cursor: pointer;
+			 outline: none;
+ 			 color: black;
+ 			 background-color: #ff9900;
+ 			 border: none;
+ 			 border-radius: 15px;
+ 			 box-shadow: 0 3px #999;
+		}
+	</style>
+	<script>
+			var fvalue = v1.value;
+			var svalue = v2.value;
+			var result = r.value;
+
+			function multiply(){
+			var fvalue = v1.value;
+			var svalue = v2.value;
+			var result = fvalue * svalue;
+			r.value = result;
+		}
+			function addition(){
+			var fvalue = parseInt(v1.value);
+			var svalue = parseInt(v2.value);
+			var result = fvalue + svalue;
+			r.value = result;
+		}
+			function subtract(){
+			var fvalue = v1.value;
+			var svalue = v2.value;
+			var result = fvalue - svalue;
+			r.value = result;
+		}
+			function divide(){
+			var fvalue = v1.value;
+			var svalue = v2.value;
+			var result = fvalue / svalue;
+			r.value = result;
+		}
+
+	</script>
+</head>
+<body>
+<fieldset><legend>Simple Calculator</legend>
+	<center>
+		<table border="2">
+			<tr><th colspan="2" bgcolor="#ff9900">Calculator</th></tr>
+			<tr><td bgcolor="#ff9900">First Value</td><td><input type="text" id="v1" name=""></td></tr>
+			<tr><td bgcolor="#ff9900">Second Value</td><td><input type="text" id="v2" name=""></td></tr>
+			<tr><td bgcolor="#ff9900">Result</td><td><input type="text" id="r" name="" disabled></td></tr>
+			<tr><td colspan="2" align="center"><button onclick="multiply()">*</button> <button onclick="addition()">+</button> <button onclick="subtract()">-</button> <button onclick="divide()">/</button></td></tr>
+		</table>
+	</center>
+</fieldset>
+
+</body>
+</html>
